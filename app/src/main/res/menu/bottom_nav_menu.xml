@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/menu"
+        android:title="Каталог" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/korzina"
+        android:title="Корзина" />
+    <item
+        android:id="@+id/navigation_orders"
+        android:icon="@drawable/istoria"
+        android:title="Заказы" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Связаться" />
+</menu>

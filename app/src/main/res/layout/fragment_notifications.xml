@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Связаться с нами"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="📧 Email: support@example.com"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="📞 Телефон: +7 (952) 117-03-26"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="📍 Адрес: г. Калиниград, ул. Горького, 20"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_call"
+            android:text="Позвонить"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button" />
+
+        <Button
+            android:id="@+id/btn_whatsapp"
+            android:text="Написать в Telegram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tv_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Ваши бонусы: 0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="❓ Часто задаваемые вопросы:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="358dp"
+            android:layout_height="239dp"
+            android:text="• Где вы доставляете?\nМы доставляем по всему Калининграду.\n\n• Какие способы оплаты?\nНаличные или карта при получении.\n\n• Сколько стоит доставка?\nБесплатно при заказе от 1350 ₽."
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Выйти из аккаунта"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button" />
+    </LinearLayout>
+</ScrollView>

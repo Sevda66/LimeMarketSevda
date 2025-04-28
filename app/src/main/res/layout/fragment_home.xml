@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:spacing="8dp">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tv_catalog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Каталог товаров"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Картинки-кнопки категорий -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Картинка для Крупы и злаки -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_grains"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Крупы и злаки"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zlaki" />
+
+                <TextView
+                    android:id="@+id/tv_grains"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Крупы и злаки"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Картинка для Молочные продукты -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_dairy"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Молочные продукты"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/milk" />
+
+                <TextView
+                    android:id="@+id/tv_dairy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Молочные продукты"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Картинка для Мясо и мясные продукты -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_meat"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Мясо и мясные продукты"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/met" />
+
+                <TextView
+                    android:id="@+id/tv_meat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Мясо и мясные продукты"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Картинки для других категорий -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Картинка для Овощи -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_vegetables"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Овощи"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/veg" />
+
+                <TextView
+                    android:id="@+id/tv_vegetables"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Овощи"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Картинка для Фрукты -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_fruits"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Фрукты"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fruits" />
+
+                <TextView
+                    android:id="@+id/tv_fruits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Фрукты"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Картинка для Хлеб и хлебобулочные изделия -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_bakery"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Хлеб и хлебобулочные изделия"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/muka" />
+
+                <TextView
+                    android:id="@+id/tv_bakery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Хлеб и хлебобулочные изделия"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Switch" />
+        </LinearLayout>
+
+        <!-- Картинки для других категорий (Продолжение) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Картинка для Консервированные продукты -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_canned"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Консервированные продукты"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cons" />
+
+                <TextView
+                    android:id="@+id/tv_canned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Консервированные продукты"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Картинка для Кондитерские изделия -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_sweets"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Кондитерские изделия"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/choc" />
+
+                <TextView
+                    android:id="@+id/tv_sweets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Кондитерские изделия"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Картинка для Напитки -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_drinks"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:contentDescription="Напитки"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nat" />
+
+                <TextView
+                    android:id="@+id/tv_drinks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Напитки"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Бонусная карта (кнопка) -->
+
+        <Button
+            android:id="@+id/btn_bonus_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Бонусная карта"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            style="@style/Widget.MaterialComponents.Button"
+            app:backgroundTint="#9C27B0"/>
+    </LinearLayout>
+</ScrollView>
